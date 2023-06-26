@@ -4,19 +4,26 @@
 
 <!-- ここにページ毎のコンテンツを書く -->
     <div class="prose ml-4">
-        <h2>id: {{ $message->id }} のメッセージ編集ページ</h2>
+        <h2>id: {{ $task->id }} のメッセージ編集ページ</h2>
     </div>
 
     <div class="flex justify-center">
-        <form method="POST" action="{{ route('tasks.update', $message->id) }}" class="w-1/2">
+        <form method="POST" action="{{ route('tasks.update', $task->id) }}" class="w-1/2">
             @csrf
             @method('PUT')
 
                 <div class="form-control my-4">
                     <label for="content" class="label">
-                        <span class="label-text">メッセージ:</span>
+                        <span class="label-text">ステータス:</span>
                     </label>
-                    <input type="text" name="content" value="{{ $message->content }}" class="input input-bordered w-full">
+                    <input type="text" name="status" value="{{ $task->status }}" class="input input-bordered w-full">
+                </div>
+                
+                <div class="form-control my-4">
+                    <label for="content" class="label">
+                        <span class="label-text">タスク:</span>
+                    </label>
+                    <input type="text" name="content" value="{{ $task->content }}" class="input input-bordered w-full">
                 </div>
 
             <button type="submit" class="btn btn-primary btn-outline">更新</button>
