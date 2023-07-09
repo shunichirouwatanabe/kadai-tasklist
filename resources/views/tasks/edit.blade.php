@@ -4,7 +4,7 @@
 
 <!-- ここにページ毎のコンテンツを書く -->
     <div class="prose ml-4">
-        <h2>id: {{ $task->id }} のメッセージ編集ページ</h2>
+        <h2>id: {{ $task->id }} のタスク編集ページ</h2>
     </div>
 
     <div class="flex justify-center">

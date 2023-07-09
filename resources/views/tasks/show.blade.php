@@ -4,7 +4,7 @@
 
 <!-- ここにページ毎のコンテンツを書く -->
     <div class="prose ml-4">
-        <h2>id = {{ $task->id }} のメッセージ詳細ページ</h2>
+        <h2>id = {{ $task->id }} のタスク詳細ページ</h2>
     </div>
 
     <table class="table w-full my-4">

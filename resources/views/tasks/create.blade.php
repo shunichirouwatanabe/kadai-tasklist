@@ -4,7 +4,7 @@
 
 <!-- ここにページ毎のコンテンツを書く -->
     <div class="prose ml-4">
-        <h2>メッセージ新規作成ページ</h2>
+        <h2>タスク新規作成ページ</h2>
     </div>
 
     <div class="flex justify-center">
